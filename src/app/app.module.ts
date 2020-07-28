@@ -5,6 +5,7 @@ import { RouterModule} from '@angular/router';
 import { AppComponent } from './app.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import {DepartmentModule} from './department/department.module';
+import {ManagerModule} from './manager/manager.module';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
@@ -20,6 +21,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     AppRoutingModule,
     FormsModule,
     DepartmentModule,
+    ManagerModule,
     ReactiveFormsModule,
     BrowserAnimationsModule,
     RouterModule,
