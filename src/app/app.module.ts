@@ -4,6 +4,8 @@ import { MatStepperModule } from '@angular/material/stepper';
 import { MatInputModule } from  '@angular/material/input'
 import { MatRadioModule } from  '@angular/material/radio'
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import { FileUploadModule } from 'ng2-file-upload';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -31,7 +33,9 @@ import { UpdateProfileComponent } from './dashboard/update-profile/update-profil
     BrowserAnimationsModule,
     MatRadioModule,
     MatInputModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    HttpClientModule, 
+    FileUploadModule
   ],
   providers: [ProfileService],
   bootstrap: [AppComponent]
