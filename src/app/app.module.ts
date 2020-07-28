@@ -1,37 +1,28 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
+import { RouterModule} from '@angular/router';
 import { AppComponent } from './app.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import {DepartmentModule} from './department/department.module';
 
-import { CreateDepartmentFormComponent } from './create-department-form/create-department-form.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MatSliderModule } from '@angular/material/slider';
-import { MatCardModule} from '@angular/material/card';
-import { MatFormFieldModule } from '@angular/material/form-field';
-import { MatInputModule } from  '@angular/material/input';
-import { MatRadioModule } from  '@angular/material/radio';
-import {MatButtonModule} from '@angular/material/button'
+
+
 
 @NgModule({
   declarations: [
-    AppComponent,
-    CreateDepartmentFormComponent
+    AppComponent,  
   ],
   
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
+    DepartmentModule,
     ReactiveFormsModule,
     BrowserAnimationsModule,
-    MatSliderModule,
-    MatCardModule,
-    MatFormFieldModule,
-    MatInputModule,
-    MatRadioModule,
-    MatButtonModule,
-
+    RouterModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
